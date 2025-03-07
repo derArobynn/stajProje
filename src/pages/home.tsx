@@ -1,40 +1,27 @@
-import Header from '../Components/header';
-import Sidebar from '../Components/sidebar';
-function Home(){
+import Header from "../Components/header";
+import Sidebar from "../Components/sidebar";
+function Home() {
+  return (
+    <div id="wrapper">
+      {/*<!-- Main -->*/}
+      <div id="main">
+        <div className="inner">
+          {/*<!-- Header -->*/}
+          <Header />
+        </div>
+      </div>
 
-    return (
-        
-        <body >
+      {/* Sidebar */}
+      <Sidebar />
 
-		{/*<!-- Wrapper -->*/}
-			<div id="wrapper">
+      {/* Scripts (opsiyonel olarak public/index.html içinde de bulunabilir) */}
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+    </div>
+  );
+}
 
-				{/*<!-- Main -->*/}
-					<div id="main">
-                        
-						<div className="inner">
-
-							{/*<!-- Header -->*/}
-								<Header/>
-
-
-						</div>
-					</div>
-            <Sidebar/>
-				
-
-			</div>
-
-		{/*<!-- Scripts -->*/}
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-    );
-  };
-  
-  export default Home;
-  
+export default Home;
