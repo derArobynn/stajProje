@@ -1,7 +1,7 @@
 import "../assets/css/main.css";
 import Sidebar from "../Components/sidebar.js";
 import Header from "../Components/header.js";
-import "../assets/cjs/pic_create.jsx";
+import "../assets/jsx/pic_create.jsx";
 import { useState, useEffect } from "react";
 
 interface GalleryItem {
