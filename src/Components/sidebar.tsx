@@ -25,52 +25,6 @@ const Sidebar = () => {
             <li>
               <Link to="/about">Hakkında</Link>
             </li>
-            <li>
-              <span className="opener">Galeri</span>
-              <ul>
-                <li>
-                  <a href="#">Filler</a>
-                </li>
-                <li>
-                  <a href="#">Yağlı Boya</a>
-                </li>
-                <li>
-                  <a href="#">Sulu Boya</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Etiam Dolore</a>
-            </li>
-            <li>
-              <a href="#">Adipiscing</a>
-            </li>
-            <li>
-              <span className="opener">Another Submenu</span>
-              <ul>
-                <li>
-                  <a href="#">Lorem Dolor</a>
-                </li>
-                <li>
-                  <a href="#">Ipsum Adipiscing</a>
-                </li>
-                <li>
-                  <a href="#">Tempus Magna</a>
-                </li>
-                <li>
-                  <a href="#">Feugiat Veroeros</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Maximus Erat</a>
-            </li>
-            <li>
-              <a href="#">Sapien Mauris</a>
-            </li>
-            <li>
-              <a href="#">Amet Lacinia</a>
-            </li>
           </ul>
         </nav>
 
@@ -81,7 +35,7 @@ const Sidebar = () => {
           </header>
           <div className="mini-posts">
             <article>
-              <a href="#" className="image">
+              <a href="images/FilLogo_1.png" className="image">
                 <img src="images/FilLogo_1.png" alt="" />
               </a>
               <p>
@@ -90,13 +44,8 @@ const Sidebar = () => {
               </p>
             </article>
             <article>
-              <a href="images/img_fil/Pic_Fil_1.png" className="image">
-                <img
-                  src="images/img_fil/Pic_Fil_1.png"
-                  alt=""
-                  width="200"
-                  height="300"
-                />
+              <a href="#" className="image">
+                <img src="#" alt="" />
               </a>
               <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper
