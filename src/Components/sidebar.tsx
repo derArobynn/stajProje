@@ -17,13 +17,13 @@ const Sidebar = () => {
           </header>
           <ul>
             <li>
-              <Link to="/home">Ana Sayfa</Link>
+              <Link to="/">Ana Sayfa</Link>
             </li>
             <li>
-              <Link to="/Gallery">Galeri</Link>
+              <Link to="/gallery">Galeri</Link>
             </li>
             <li>
-              <Link to="/">Hakkında</Link>
+              <Link to="/about">Hakkında</Link>
             </li>
             <li>
               <span className="opener">Galeri</span>
