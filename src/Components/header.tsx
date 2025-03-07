@@ -2,7 +2,7 @@ function Header() {
   return (
     <header id="header">
       <a href="index.html" className="logo">
-        <strong>Editorial</strong> by HTML5 UP
+        <strong>Kişisel Blog</strong> by Nergiz Candemir
       </a>
       <ul className="icons">
         <li>
@@ -21,7 +21,10 @@ function Header() {
           </a>
         </li>
         <li>
-          <a href="#" className="icon brands fa-instagram">
+          <a
+            href="https://www.instagram.com/nergizsanat/"
+            className="icon brands fa-instagram"
+          >
             <span className="label">Instagram</span>
           </a>
         </li>

@@ -1,8 +1,26 @@
 import "../assets/css/main.css";
 import Sidebar from "../Components/sidebar";
 import Header from "../Components/header";
+import "../assets/cjs/pic_create.jsx";
+import { useState, useEffect } from "react";
+
+interface GalleryItem {
+  id: number;
+  title: string;
+  description: string;
+}
 
 function Gallery() {
+  const [galleryData, setGalleryData] = useState<GalleryItem[]>([]); // JSON verisini tutacak state
+  useEffect(() => {
+    fetch("/images/resim_desc.json") // JSON dosyasının doğru yolu
+      .then((response) => response.json())
+      .then((data) => {
+        setGalleryData(data); // JSON verisini state'e aktarıyoruz
+      })
+      .catch((error) => console.error("JSON yüklenirken hata oluştu:", error));
+  }, []); // Component mount olduğunda çalışacak
+
   return (
     <div id="wrapper">
       {/*<!-- Main -->*/}
@@ -17,7 +35,30 @@ function Gallery() {
               <h2>Ipsum sed dolor</h2>
             </header>
             <div className="posts">
-              <article>
+              {galleryData.length > 0 ? (
+                galleryData.map((item) => (
+                  <article key={item.id}>
+                    <a href="#" className="image">
+                      <img
+                        src={`images/img_fil/Pic_Fil_${item.id}.png`}
+                        alt={`Pic_Fil_${item.id}`}
+                      />
+                    </a>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                    <ul className="actions">
+                      <li>
+                        <a href="#" className="button">
+                          More
+                        </a>
+                      </li>
+                    </ul>
+                  </article>
+                ))
+              ) : (
+                <p>Loading...</p>
+              )}
+              {/*<!--<article>
                 <a href="#" className="image">
                   <img src="" alt="" />
                 </a>
@@ -88,7 +129,7 @@ function Gallery() {
                     </a>
                   </li>
                 </ul>
-              </article>
+              </article>-->*/}
             </div>
           </section>
         </div>

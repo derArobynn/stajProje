@@ -20,7 +20,7 @@ const Sidebar = () => {
               <Link to="/home">Ana Sayfa</Link>
             </li>
             <li>
-              <Link to="/gallery">Galeri</Link>
+              <Link to="/Gallery">Galeri</Link>
             </li>
             <li>
               <Link to="/">Hakkında</Link>
@@ -82,7 +82,21 @@ const Sidebar = () => {
           <div className="mini-posts">
             <article>
               <a href="#" className="image">
-                <img src="" alt="" />
+                <img src="images/FilLogo_1.png" alt="" />
+              </a>
+              <p>
+                Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                dolore aliquam.
+              </p>
+            </article>
+            <article>
+              <a href="images/img_fil/Pic_Fil_1.png" className="image">
+                <img
+                  src="images/img_fil/Pic_Fil_1.png"
+                  alt=""
+                  width="200"
+                  height="300"
+                />
               </a>
               <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper
@@ -91,16 +105,7 @@ const Sidebar = () => {
             </article>
             <article>
               <a href="#" className="image">
-                <img src="images/pic08.jpg" alt="" />
-              </a>
-              <p>
-                Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                dolore aliquam.
-              </p>
-            </article>
-            <article>
-              <a href="#" className="image">
-                <img src="images/pic09.jpg" alt="" />
+                <img src="#" alt="" />
               </a>
               <p>
                 Aenean ornare velit lacus, ac varius enim lorem ullamcorper
